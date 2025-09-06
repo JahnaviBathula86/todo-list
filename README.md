@@ -1,1 +1,2 @@
-# todo-list
+# TO-DO Application
+ TO-DO Application Project Overview: Welcome to the TO-DO application! This web-based application is designed to help users efficiently manage their daily tasks and track their moods.  Features:  Task Management: Easily add, edit, categorize, and organize your tasks into important and completed categories.  Mood Tracker: Track your daily emotions using emojis, add personal notes, and visualize your mood history with a graph.  Reflections: Review your mood trends over time and save notes for detailed reflections about your day.  User-Friendly Interface: A clean and intuitive interface designed with user experience in mind.  Technologies Used:  HTML  CSS  JavaScript  Chart.js for graph visualizations

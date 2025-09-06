@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="website-name">TO-DO</h1>
+        <!-- Add Login and Sign Up buttons here --> 
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button> 
+            <button class="signup-btn">Sign Up</button> 
+        </div>
+    </header>
+    <div id="main-content">
+        <div class="info-box">
+            <p><strong>Welcome to your TO-DO Application</strong></p>
+            <p>A web interface to easily track your tasks <br>& boost your productivity</p>
+            <button class="get-started-btn" id="get-started-btn">Get Started</button>
+
+            
+        </div>
+
+        <!-- First feature section -->
+        <div class="feature-section">
+            <div class="feature">
+                <img src="ss1.png" alt="TO-DO App Screenshot" class="feature-image hidden" id="image1">
+                <div class="feature-text hidden" id="text1">
+                    <h2>Stay Organized with Ease</h2>
+                    <p>Our TO-DO application offers a streamlined interface to help you manage your tasks efficiently. Whether it's setting priorities, tracking completed tasks, or planning your day, our app has got you covered.</p>
+                    <ul>
+                        <li><strong>Create and Manage Tasks:</strong> Easily add, edit, and organize your tasks.</li>
+                        <li><strong>Mark as Important:</strong> Highlight crucial tasks to stay focused.</li>
+                        <li><strong>Track Completion:</strong> Keep track of completed tasks effortlessly.</li>
+                        <li><strong>Mood Tracker Integration:</strong> Reflect on your day and monitor your emotions over time.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Second Feature section-->
+        <div class="feature-section1">
+            <div class="feature1">
+                <div class="feature-text hidden" id="text2">
+                    <h2>Track Your Mood</h2>
+                    <p>Our Mood Tracker allows you to easily log your daily emotions. Select from a range of emojis to express how you're feeling, and add detailed notes to capture your day's experiences. This tool helps you reflect on your emotional well-being over time.</p>
+                    <ul>
+                        <li><strong>Log Emotions:</strong> Use emojis to track daily moods.</li>
+                        <li><strong>Add Notes:</strong> Write detailed reflections</li>
+                    </ul>    
+                </div>
+                <img src="ss2.png" alt="Mood Tracker Screenshot" class="feature-image hidden" id="image2">
+            </div>
+        </div>
+        <!-- Third feature section -->
+        <div class="feature-section3">
+            <div class="feature3">
+                <img src="ss3.png" alt="TO-DO App Screenshot" class="feature-image hidden" id="image3">
+                <div class="feature-text hidden" id="text3">
+                    <h2>Track Your Reflections</h2>
+                    <p>Our Mood Tracker allows you to log daily emotions and provides a weekly view with detailed charts. Monitor your emotional trends over time and save personal notes to reflect on your daily experiences. Whether celebrating great days or acknowledging stress, this feature helps you understand and manage your emotions better.</p>
+                    <ul>
+                        <li><strong>Your Reflections:</strong> Monitor your emotions over the week with a detailed chart.</li>
+                        <li><strong>Saved Notes:</strong> Keep personal notes to reflect on your daily experiences, like "Had a great day!" or "Feeling a bit stressed."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Login popup -->
+<div id="login-popup" class="popup hidden">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="password-wrapper">
+                <input type="text" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <i class="far fa-eye-slash" id="toggleLoginPassword" style="cursor: pointer;"></i>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p>New user? <a href="#" id="signup-link">Sign up</a></p>
+        </form>
+    </div>
+</div>
+
+
+<!-- Sign-up popup -->
+<div id="signup-popup" class="popup hidden">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <div class="password-wrapper1">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <i class="far fa-eye-slash" id="toggleSignupPassword" style="cursor: pointer;"></i>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
